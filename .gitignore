@@ -1,0 +1,123 @@
+```gitignore
+# =========================
+# Node Modules
+# =========================
+node_modules/
+
+# =========================
+# Next.js
+# =========================
+.next/
+out/
+build/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Runtime Data
+# =========================
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Dependency Directories
+# =========================
+jspm_packages/
+
+# =========================
+# Coverage Directory
+# =========================
+coverage/
+*.lcov
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs and Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+.cache/
+
+# =========================
+# Prisma
+# =========================
+prisma/dev.db
+prisma/dev.db-journal
+
+# =========================
+# Uploads / Generated Files
+# =========================
+uploads/
+public/uploads/
+generated/
+
+# =========================
+# Build Outputs
+# =========================
+dist/
+release/
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Misc
+# =========================
+*.pem
+*.key
+*.crt
+
+# =========================
+# Vercel
+# =========================
+.vercel
+
+# =========================
+# Testing
+# =========================
+playwright-report/
+test-results/
+
+# =========================
+# Package Managers
+# =========================
+.pnpm-store/
+.yarn/
+```
