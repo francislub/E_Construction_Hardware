@@ -11,6 +11,7 @@
     "prisma:db-push": "prisma db push",
     "prisma:studio": "prisma studio",
     "prisma:migrate": "prisma migrate dev",
+    "postinstall": "prisma generate",
     "init": "prisma generate && prisma db push && next dev"
   },
   "dependencies": {
