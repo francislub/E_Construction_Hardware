@@ -3,7 +3,6 @@
 import { useState, useEffect, use } from 'react'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/navigation'
-import { Header } from '@/components/header'
 import Link from 'next/link'
 import { Heart, ShoppingCart, Star, Package, Truck, Shield, ChevronLeft, Plus, Minus } from 'lucide-react'
 
@@ -139,7 +138,6 @@ export default function ProductDetailPage({
   if (isLoading) {
     return (
       <main className="min-h-screen bg-gray-50">
-        <Header />
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 animate-pulse">
             <div className="aspect-square bg-gray-200 rounded-2xl" />
@@ -160,7 +158,6 @@ export default function ProductDetailPage({
   if (fetchError || !product) {
     return (
       <main className="min-h-screen bg-gray-50">
-        <Header />
         <div className="flex flex-col items-center justify-center py-32 gap-4">
           <Package className="h-16 w-16 text-gray-300" />
           <h2 className="text-xl font-semibold text-gray-700">Product not found</h2>
@@ -185,7 +182,6 @@ export default function ProductDetailPage({
   // ── Main page ──────────────────────────────────────────────────
   return (
     <main className="min-h-screen bg-gray-50">
-      <Header />
 
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Breadcrumb */}
