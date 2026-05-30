@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import {prisma} from '@/lib/db';
-import { PaymentSchema } from '@/lib/validations';
+import { paymentSchema } from '@/lib/validations';
 import { sendEmail } from '@/lib/email';
 
 export async function GET(request: NextRequest) {
@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
     }
 
     const data = await request.json();
-    const validatedData = PaymentSchema.parse(data);
+    const validatedData = paymentSchema.parse(data);
 
     // Verify order exists and belongs to user
     const order = await prisma.order.findUnique({
