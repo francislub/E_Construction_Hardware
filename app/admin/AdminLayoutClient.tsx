@@ -17,7 +17,7 @@ const NAV_ITEMS = [
   { href: '/admin/users', label: 'Users', icon: UsersIcon },
   { href: '/admin/suppliers', label: 'Suppliers', icon: FactoryIcon },
   { href: '/admin/deliveries', label: 'Deliveries', icon: TruckIcon },
-  { href: '/admin/payments', label: 'Payments', icon: CoinIcon },
+  // { href: '/admin/payments', label: 'Payments', icon: CoinIcon },
 ]
 
 // ─── SVG Icons ────────────────────────────────────────────────────────────────

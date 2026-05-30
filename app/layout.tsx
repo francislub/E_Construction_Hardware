@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Hardware Store - Quality Tools & Materials',
+  title: 'butebi Hardware Store - Quality Tools & Materials',
   description:
     'Your one-stop shop for quality hardware, tools, and building materials',
   generator: 'v0.app',
